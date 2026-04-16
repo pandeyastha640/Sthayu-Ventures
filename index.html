@@ -1,114 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sthayu Ventures</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #ffffff;
-            color: #333;
-        }
-        header {
-            background: #1F7A63;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background: #145a4a;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 40px;
-            max-width: 900px;
-            margin: auto;
-        }
-        h2 {
-            color: #1F7A63;
-        }
-        .btn {
-            background: #D4A017;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        footer {
-            background: #1F7A63;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sthayu Ventures</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 50px;
+}
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.btn {
+    background: #D4A017;
+    padding: 12px 25px;
+    border-radius: 30px;
+    color: white;
+    text-decoration: none;
+}
+
+/* GLASS CARD */
+.glass {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+.glass:hover {
+    transform: translateY(-10px) scale(1.02);
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* IMAGE */
+.img-box img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
     <h1>Sthayu Ventures</h1>
     <p>Growing Businesses, Sustaining Futures</p>
-</header>
+    <a href="#contact" class="btn">Book Free Consultation</a>
+</div>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#approach">Approach</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section>
-    <h2>Welcome</h2>
-    <p>We help businesses of all sizes improve operations, access opportunities, and scale sustainably.</p>
-    <a href="#contact" class="btn">Book a Free Consultation</a>
-</section>
-
-<section id="about">
+<!-- ABOUT -->
+<div class="section">
     <h2>About Us</h2>
-    <p>
-        Sthayu Ventures is a consulting and advisory firm focused on enabling sustainable growth for businesses,
-        farmer producer organizations (FPOs), and impact-driven enterprises.
-    </p>
-    <p>
-        Founded by Astha Pandey, with experience in strategy, partnerships, and rural development,
-        we bring practical solutions to real-world challenges.
-    </p>
-</section>
+    <div class="glass">
+        <p>
+            Sthayu Ventures helps businesses, FPOs, and organizations grow sustainably 
+            through consulting, strategy, and partnerships.
+        </p>
+        <p>
+            Founded by Astha Pandey, focused on impact-driven growth and execution.
+        </p>
+    </div>
+</div>
 
-<section id="services">
+<!-- SERVICES -->
+<div class="section">
     <h2>Our Services</h2>
-    <ul>
-        <li><strong>Business Consulting:</strong> Strategy, growth planning, and operations support</li>
-        <li><strong>CSR Project Support:</strong> Implementation, monitoring, and reporting</li>
-        <li><strong>FPC Advisory:</strong> MIS setup, compliance, and capacity building</li>
-    </ul>
-</section>
+    <div class="grid">
 
-<section id="approach">
+        <div class="glass">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44" />
+            </div>
+            <h3>Business Consulting</h3>
+            <p>Strategy, operations, and growth planning.</p>
+        </div>
+
+        <div class="glass">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" />
+            </div>
+            <h3>CSR Projects</h3>
+            <p>Execution, monitoring, and reporting.</p>
+        </div>
+
+        <div class="glass">
+            <div class="img-box">
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6" />
+            </div>
+            <h3>FPC Advisory</h3>
+            <p>Compliance, MIS, and capacity building.</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- APPROACH -->
+<div class="section">
     <h2>Our Approach</h2>
-    <p>Diagnose → Plan → Execute → Support</p>
-    <p>We focus on practical, scalable, and sustainable solutions tailored to your needs.</p>
-</section>
+    <div class="grid">
+        <div class="glass">Diagnose</div>
+        <div class="glass">Plan</div>
+        <div class="glass">Execute</div>
+        <div class="glass">Support</div>
+    </div>
+</div>
 
-<section id="contact">
+<!-- CONTACT -->
+<div class="section contact" id="contact">
     <h2>Contact Us</h2>
-    <p>Email: sthayu.ventures@gmail.com</p>
-    <p>Phone: +91-XXXXXXXXXX</p>
-    <p>Location: Uttar Pradesh, India</p>
-</section>
+    <div class="glass">
+        <p>Email: sthayu.ventures@gmail.com</p>
+        <p>Phone: +91-XXXXXXXXXX</p>
+        <p>Location: Uttar Pradesh, India</p>
+    </div>
+</div>
 
 <footer>
-    <p>© 2026 Sthayu Ventures. All rights reserved.</p>
+    <p>© 2026 Sthayu Ventures</p>
 </footer>
 
 </body>
